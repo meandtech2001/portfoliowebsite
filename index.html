@@ -1420,7 +1420,10 @@
                 border-color: var(--accent);
                 color: #fff;
               "
-              onclick="window.print()"
+              onclick="
+                window.open(this.href, '_blank');
+                return false;
+              "
             >
               <svg
                 width="16"
